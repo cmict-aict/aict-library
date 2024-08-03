@@ -1,4 +1,4 @@
-module dingsw2019/library
+module github.com/dingsw2019/library
 
 go 1.20
 
