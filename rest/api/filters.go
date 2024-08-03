@@ -103,7 +103,8 @@ func (w *StatusResponseWriter) WriteHeader(code int) {
 type OIDCClientOptions struct {
 	Issuer         string
 	Audience       string
-	NoAuthPatterns []string // white list pathes, match by path.Match
+	NoAuthPatterns []string                   // white list pathes, match by path.Match
+	CustomRules    func(r *http.Request) bool // 用户自定义规则
 }
 
 func OIDCAuthFilter(ctx context.Context, opts *OIDCClientOptions) Filter {
@@ -128,6 +129,11 @@ func OIDCAuthFilter(ctx context.Context, opts *OIDCClientOptions) Filter {
 				next.ServeHTTP(w, r)
 				return
 			}
+		}
+		// 调用用户自定义规则
+		if opts.CustomRules != nil && opts.CustomRules(r) {
+			next.ServeHTTP(w, r)
+			return
 		}
 		token := strings.TrimPrefix(r.Header.Get("Authorization"), "Bearer ")
 		if token == "" {
