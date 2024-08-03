@@ -18,8 +18,8 @@ import (
 	"net/http"
 	"strings"
 
+	"github.com/dingsw2019/library/rest/openapi"
 	"github.com/go-openapi/spec"
-	"kubegems.io/library/rest/openapi"
 )
 
 type Module interface {

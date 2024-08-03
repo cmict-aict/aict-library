@@ -19,9 +19,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/dingsw2019/library/rest/request"
 	"golang.org/x/exp/slices"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"kubegems.io/library/rest/request"
 )
 
 const DefaultPageSize = 10

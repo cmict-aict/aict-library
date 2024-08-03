@@ -21,8 +21,8 @@ import (
 	"net/http/pprof"
 	"os"
 
-	"kubegems.io/library/log"
-	"kubegems.io/library/rest/listen"
+	"github.com/dingsw2019/library/log"
+	"github.com/dingsw2019/library/rest/listen"
 )
 
 // ServeDebug provides a debug endpoint

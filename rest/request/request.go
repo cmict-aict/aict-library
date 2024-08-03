@@ -26,7 +26,7 @@ import (
 	"strconv"
 	"strings"
 
-	"kubegems.io/library/rest/mux"
+	"github.com/dingsw2019/library/rest/mux"
 	"sigs.k8s.io/yaml"
 )
 

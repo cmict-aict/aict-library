@@ -20,7 +20,7 @@ import (
 	"strings"
 	"time"
 
-	"kubegems.io/library/rest/api"
+	"github.com/dingsw2019/library/rest/api"
 )
 
 const MB = 1 << 20

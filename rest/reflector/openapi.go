@@ -18,9 +18,9 @@ import (
 	"net/http"
 	"reflect"
 
+	libreflect "github.com/dingsw2019/library/reflect"
+	"github.com/dingsw2019/library/rest/openapi"
 	"github.com/go-openapi/spec"
-	libreflect "kubegems.io/library/reflect"
-	"kubegems.io/library/rest/openapi"
 )
 
 func BuildOpenAPIRoute(list []ConvertedHandler) map[string]spec.PathItem {

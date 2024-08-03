@@ -23,14 +23,14 @@ import (
 	"strconv"
 	"strings"
 
+	libreflect "github.com/dingsw2019/library/reflect"
+	"github.com/dingsw2019/library/rest/mux"
+	"github.com/dingsw2019/library/rest/openapi"
+	"github.com/dingsw2019/library/rest/request"
+	"github.com/dingsw2019/library/rest/response"
+	libstrings "github.com/dingsw2019/library/strings"
 	"github.com/go-openapi/spec"
 	"golang.org/x/exp/maps"
-	libreflect "kubegems.io/library/reflect"
-	"kubegems.io/library/rest/mux"
-	"kubegems.io/library/rest/openapi"
-	"kubegems.io/library/rest/request"
-	"kubegems.io/library/rest/response"
-	libstrings "kubegems.io/library/strings"
 )
 
 func Register(mux *mux.MethodServeMux, swagger *spec.Swagger, prefix string, parents []string, controller any) error {

@@ -22,7 +22,7 @@ import (
 	"github.com/casbin/casbin/v2"
 	"github.com/casbin/casbin/v2/model"
 	"github.com/casbin/casbin/v2/persist"
-	"kubegems.io/library/rest/response"
+	"github.com/dingsw2019/library/rest/response"
 )
 
 type PermissionChecker interface {

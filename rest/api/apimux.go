@@ -18,12 +18,12 @@ import (
 	"context"
 	"net/http"
 
+	"github.com/dingsw2019/library/rest/listen"
+	"github.com/dingsw2019/library/rest/matcher"
+	"github.com/dingsw2019/library/rest/mux"
+	"github.com/dingsw2019/library/rest/openapi"
+	"github.com/dingsw2019/library/rest/response"
 	"github.com/go-openapi/spec"
-	"kubegems.io/library/rest/listen"
-	"kubegems.io/library/rest/matcher"
-	"kubegems.io/library/rest/mux"
-	"kubegems.io/library/rest/openapi"
-	"kubegems.io/library/rest/response"
 )
 
 type API struct {

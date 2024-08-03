@@ -20,11 +20,11 @@ import (
 	"strings"
 	"time"
 
+	liblog "github.com/dingsw2019/library/log"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
-	liblog "kubegems.io/library/log"
 
-	libreflect "kubegems.io/library/reflect"
+	libreflect "github.com/dingsw2019/library/reflect"
 )
 
 // Parse 从多个方式加载配置
