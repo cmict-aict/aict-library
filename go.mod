@@ -1,4 +1,4 @@
-module kubegems.io/library
+module dingsw2019/library
 
 go 1.20
 
