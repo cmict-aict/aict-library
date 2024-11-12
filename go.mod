@@ -1,4 +1,4 @@
-module github.com/dingsw2019/library
+module github.com/cmict-aict/aict-library
 
 go 1.20
 
